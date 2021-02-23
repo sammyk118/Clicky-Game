@@ -4,41 +4,60 @@ import Card from "./components/Cards";
 import characters from "./mario.json";
 
 class App extends Component {
-  // constructor() {
     state = {
-      characters: characters
+      characters: characters,
+      score: 0,
+      highScore: 0,
+      usedArr: []
     };
   
   shuffle = id => {
+    console.log(id);
+    let clickedArr = this.state.usedArr;
     let charArr = this.state.characters;
-    for (let i = charArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [charArr[i], charArr[j]] = [charArr[j], charArr[i]];
+
+    if (clickedArr.indexOf(id) === -1) {
+      clickedArr.push(id);
+      
+      for (let i = charArr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [charArr[i], charArr[j]] = [charArr[j], charArr[i]];
+      }
+
+      this.setState({ characters: charArr, score: this.state.score + 1, usedArr: clickedArr })
+      if (this.state.score >= this.state.highScore) {
+        this.setState({highScore: this.state.score})
+      }
+      console.log(this.state.usedArr);
     }
-    this.setState({characters: charArr})
-  }
+    else {
+      console.log("poor choice!")
+      this.setState({score: 0, usedArr: []})
+    }
+    }
 
   render() {
     return (
       <div className="App">
-        <nav class="nav navBar">
+        <nav className="nav navBar">
           <ul>
-            <li>Clicky</li>
-            <li>"Score: 0 | Top Score: 0"</li>
+            <li className="nav-item">Clicky</li>
+            <li>Score: {this.state.score} | Top Score: {this.state.highScore}</li>
           </ul>
         </nav>
-        <header class="header"> <h2>Click an image. The more you can click without clicking the same one twice, the better your score!</h2></header>
-        <main class="container">
-        <div class="row">
+        <header className="header"> <h2>Click an image. The more you can click without clicking the same one twice, the better your score!</h2></header>
+        <div className="container">
+        <div className="row">
           {this.state.characters.map(character => (
             <Card
+              key={character.id}
               id={character.id}
               name={character.name}
               image={character.image}
               shuffle={this.shuffle}
             />))}
             </div>
-        </main>
+        </div>
       </div>
     );
   }

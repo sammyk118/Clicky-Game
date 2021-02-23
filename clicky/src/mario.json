@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Mario",
+        "image": ""
+    },
+    {
+        "id": 2,
+        "name": "Luigi",
+        "image": ""
+    },
+    {
+        "id": 3,
+        "name": "Peach",
+        "image": ""
+    },
+    {
+        "id": 4,
+        "name": "Toad",
+        "image": ""
+    },
+    {
+        "id": 5,
+        "name": "Yoshi",
+        "image": ""
+    },
+    {
+        "id": 6,
+        "name": "Bowser",
+        "image": ""
+    },
+    {
+        "id": 7,
+        "name": "Bowser Jr",
+        "image": ""
+    },
+    {
+        "id": 8,
+        "name": "Waluigi",
+        "image": ""
+    },
+    {
+        "id": 9,
+        "name": "Wario",
+        "image": ""
+    },
+    {
+        "id": 10,
+        "name": "Daisy",
+        "image": ""
+    },
+    {
+        "id": 11,
+        "name": "Goomba",
+        "image": ""
+    },
+    {
+        "id": 12,
+        "name": "Koopa",
+        "image": ""
+    }
+]

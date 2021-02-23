@@ -1,26 +1,23 @@
-import React, { component } from "react";
+import React, { Component } from "react";
 import './App.css';
-
+import Card from "./components/Cards";
+import characters from "./mario.json";
 
 class App extends Component {
+  state = {
+    characters: characters
+  };
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a>
-        </header>
+        <nav class="nav navBar">
+          <ul>
+            <li>Clicky</li>
+            <li>"Score: 0 | Top Score: 0"</li>
+          </ul>
+        </nav>
+        <header class="header"> <h2>Click an image. The more you can click without clicking the same one twice, the better your score!</h2></header>
       </div>
     );
   }

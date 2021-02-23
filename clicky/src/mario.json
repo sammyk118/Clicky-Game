@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name": "Mario",
-        "image": "./mario.ico"
+        "image": "mario.ico"
     },
     {
         "id": 2,
         "name": "Luigi",
-        "image": ""
+        "image": "luigi.jpg"
     },
     {
         "id": 3,
         "name": "Peach",
-        "image": ""
+        "image": "peach.png"
     },
     {
         "id": 4,
         "name": "Toad",
-        "image": ""
+        "image": "toad.png"
     },
     {
         "id": 5,
         "name": "Yoshi",
-        "image": ""
+        "image": "yoshi.png"
     },
     {
         "id": 6,
         "name": "Bowser",
-        "image": ""
+        "image": "bowser.png"
     },
     {
         "id": 7,
         "name": "Bowser Jr",
-        "image": ""
+        "image": "bowserjr.jpg"
     },
     {
         "id": 8,
         "name": "Waluigi",
-        "image": ""
+        "image": "waluigi.jpg"
     },
     {
         "id": 9,
         "name": "Wario",
-        "image": ""
+        "image": "wario.png"
     },
     {
         "id": 10,
         "name": "Daisy",
-        "image": ""
+        "image": "daisy.png"
     },
     {
         "id": 11,
         "name": "Goomba",
-        "image": ""
+        "image": "goomba.png"
     },
     {
         "id": 12,
         "name": "Koopa",
-        "image": ""
+        "image": "koopa.jpeg"
     }
 ]

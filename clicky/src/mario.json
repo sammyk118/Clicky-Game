@@ -7,7 +7,7 @@
     {
         "id": 2,
         "name": "Luigi",
-        "image": "luigi.jpg"
+        "image": "./assets/luigi.jpg"
     },
     {
         "id": 3,
@@ -22,17 +22,17 @@
     {
         "id": 5,
         "name": "Yoshi",
-        "image": "yoshi.png"
+        "image": "./yoshi.png"
     },
     {
         "id": 6,
         "name": "Bowser",
-        "image": "bowser.png"
+        "image": "./public/bowser.png"
     },
     {
         "id": 7,
         "name": "Bowser Jr",
-        "image": "bowserjr.jpg"
+        "image": "./bowserjr.jpg"
     },
     {
         "id": 8,
